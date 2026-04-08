@@ -1,12 +1,23 @@
 ﻿let selectedSong = null;
 let history = [];
 
+function renderSongList() {
+    console.log("曲リスト描画");
+}
+
 window.onload = async () => {
-    await loadSongsFromFile();
-    history = loadHistory();
-    renderSongList();
-    renderHistory();
+    try {
+        await loadSongsFromFile();
+        console.log("読み込み成功");
+
+        history = loadHistory();
+        renderSongList();
+        renderHistory();
+    } catch (e) {
+        console.error("onloadエラー", e);
+    }
 };
+
 
 function selectSong(id) {
     selectedSong = songs.find(s => s.id === id);
