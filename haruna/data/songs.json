@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Dig Delight!",
+    "duration": 118.3,
+    "combo": 640,
+    "difficulty": "EXPERT",
+    "multiplier": 1.10,
+    "bpm": 179
+  },
+  {
+    "id": 2,
+    "name": "Direct Drive!",
+    "duration": 135.5,
+    "combo": 680,
+    "difficulty": "EXPERT",
+    "multiplier": 1.10,
+    "bpm": 155
+  }
+]
