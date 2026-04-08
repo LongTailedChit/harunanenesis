@@ -1,17 +1,12 @@
 ﻿let selectedSong = null;
 let history = [];
 
-function renderSongList() {
-    console.log("曲リスト描画");
-}
-
 window.onload = async () => {
     try {
         await loadSongsFromFile();
         console.log("読み込み成功");
 
         history = loadHistory();
-        renderSongList();
         renderHistory();
     } catch (e) {
         console.error("onloadエラー", e);
